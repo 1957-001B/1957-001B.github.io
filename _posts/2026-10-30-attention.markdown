@@ -8,7 +8,7 @@ permalink: /attention/
 
 attention is the slice of your life that is actually happening. not your plans, not your self-image, not the hours on a clock. the hours you were there for.
 
-you can lose money and get more. you can lose a job and get another. you cannot get back the afternoon you spent somewhere else. that time was not stored. it was used.
+you can lose money and get more. you can lose a job and get another. you cannot get back the afternoon you spent somewhere else. that time was not stored. it was used. pink floyd already said that part: [time](https://www.youtube.com/watch?v=Qr0-7Ds79zo).
 
 so the inventory of a life is what you repeatedly turn toward when nobody is grading you. that pattern is more honest than a values statement. a person who says family matters and spends every waking hour on status is not confused about the word family. their attention already voted.
 
