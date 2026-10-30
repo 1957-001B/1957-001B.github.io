@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
+title: about
 permalink: /about/
 ---
 
-If you think you know for certain you are wrong and whatever you thought yesterday if you don't somewhat doubt you are likely wrong.
+if you think you know for certain, you are wrong. if you don't somewhat doubt whatever you thought yesterday, you are likely wrong.
