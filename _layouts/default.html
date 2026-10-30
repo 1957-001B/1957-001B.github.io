@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#000">
+<meta name="color-scheme" content="dark">
+{%- if page.url == "/" or page.url == "/index.html" -%}
+{%- assign is_home = true -%}
+{%- endif -%}
+<title>{%- unless is_home -%}{%- if page.title -%}{{ page.title | escape }} — {% endif -%}{%- endunless -%}{{ site.title | escape }}</title>
+<meta name="description" content="{{ site.description | escape }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<link rel="alternate" type="application/atom+xml" title="{{ site.title | escape }}" href="{{ '/feed.xml' | absolute_url }}">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23000'/%3E%3Crect x='3' y='3' width='7' height='10' fill='%238d9a86'/%3E%3C/svg%3E">
+<style>
+:root{color-scheme:dark}
+html{background:#000}
+body{margin:0;background:#000;color:#8d9a86;font:16px/1.55 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+main{max-width:68ch;margin:0 auto;padding:2.5rem 1rem 3rem}
+h1,p,ul,ol,nav,pre{margin:0}
+h1{font:inherit;font-weight:400}
+.site::before{content:"> "}
+.site a,nav a{text-decoration:none}
+p,ul,ol,pre,nav,time{margin-top:1rem}
+p+p,li+li{margin-top:.35rem}
+a{color:inherit}
+a:hover{text-decoration:none}
+:focus-visible{outline:1px solid currentColor;outline-offset:2px}
+::selection{background:#8d9a86;color:#000}
+.posts{list-style:none;padding:0}
+.posts li{display:grid;grid-template-columns:11ch minmax(0,1fr);gap:.75rem}
+pre,code{font:inherit;color:inherit}
+pre{white-space:pre-wrap}
+img{max-width:100%;height:auto}
+nav a+a{margin-left:1.5ch}
+</style>
+</head>
+<body>
+<main>
+{%- if is_home -%}
+<h1 class="site"><a href="{{ '/' | relative_url }}">{{ site.title | escape }}</a></h1>
+<p>{{ site.description | escape }}</p>
+{%- else -%}
+<p class="site"><a href="{{ '/' | relative_url }}">{{ site.title | escape }}</a></p>
+{%- endif -%}
+{{ content }}
+<nav>
+<a href="{{ '/about/' | relative_url }}">about</a>
+<a href="https://x.com/{{ site.twitter_username }}">x</a>
+<a href="https://github.com/{{ site.github_username | strip }}">github</a>
+<a href="{{ '/feed.xml' | relative_url }}">rss</a>
+</nav>
+</main>
+</body>
+</html>
